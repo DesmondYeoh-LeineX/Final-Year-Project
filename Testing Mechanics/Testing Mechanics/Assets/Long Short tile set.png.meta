@@ -1,0 +1,866 @@
+fileFormatVersion: 2
+guid: ed74803cca23f2b44bb2eb185f081822
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3977125841306171955
+    second: Long Short tile set_0
+  - first:
+      213: -3238057201862355426
+    second: Long Short tile set_1
+  - first:
+      213: 3018428086365980121
+    second: Long Short tile set_2
+  - first:
+      213: -3083892678524605308
+    second: Long Short tile set_3
+  - first:
+      213: 9042396496616613837
+    second: Long Short tile set_4
+  - first:
+      213: -7878326915807647090
+    second: Long Short tile set_5
+  - first:
+      213: -1135683042933558559
+    second: Long Short tile set_6
+  - first:
+      213: 6205389795877954330
+    second: Long Short tile set_7
+  - first:
+      213: -5735499001279205905
+    second: Long Short tile set_8
+  - first:
+      213: -7537758807341077646
+    second: Long Short tile set_9
+  - first:
+      213: 3604588058077391089
+    second: Long Short tile set_10
+  - first:
+      213: -4748533382219973212
+    second: Long Short tile set_11
+  - first:
+      213: 5047379772850663236
+    second: Long Short tile set_12
+  - first:
+      213: 5685502923273026831
+    second: Long Short tile set_13
+  - first:
+      213: -6158572308487041141
+    second: Long Short tile set_14
+  - first:
+      213: 203095992041482619
+    second: Long Short tile set_15
+  - first:
+      213: 5884584102119741444
+    second: Long Short tile set_16
+  - first:
+      213: -1625282331051853943
+    second: Long Short tile set_17
+  - first:
+      213: 9203894788588101826
+    second: Long Short tile set_18
+  - first:
+      213: 2487801816268395414
+    second: Long Short tile set_19
+  - first:
+      213: -8235239853966797729
+    second: Long Short tile set_20
+  - first:
+      213: 5746675817182285879
+    second: Long Short tile set_21
+  - first:
+      213: -5182157846574992015
+    second: Long Short tile set_22
+  - first:
+      213: 7751028901017526743
+    second: Long Short tile set_5
+  - first:
+      213: 5706642986409870825
+    second: Long Short tile set_23
+  - first:
+      213: -6738557242566983289
+    second: Long Short tile set_24
+  - first:
+      213: 6999584197561017143
+    second: Long Short tile set_25
+  - first:
+      213: -4118109599612051554
+    second: Long Short tile set_26
+  - first:
+      213: -2805213640281063631
+    second: Long Short tile set_27
+  - first:
+      213: -7810760055068922638
+    second: Long Short tile set_28
+  - first:
+      213: -3576422131292459335
+    second: Long Short tile set_29
+  - first:
+      213: -257959943688427255
+    second: Long Short tile set_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Long Short tile set_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 925
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ab41681e6913730800000000000000
+      internalID: 3977125841306171955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 926
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e165990812c1013d0800000000000000
+      internalID: -3238057201862355426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 895
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d508eb2a5c93e920800000000000000
+      internalID: 3018428086365980121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_3
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 870
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cec13b2ffc335d0800000000000000
+      internalID: -3083892678524605308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 870
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7e11b74bb0d7d70800000000000000
+      internalID: 9042396496616613837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 303
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2b2802a4e3d30f0800000000000000
+      internalID: -1135683042933558559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 303
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13a32c4429fd1650800000000000000
+      internalID: 6205389795877954330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 304
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed252bdb0a6760b0800000000000000
+      internalID: -5735499001279205905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_9
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 303
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27becdd2d40846790800000000000000
+      internalID: -7537758807341077646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_10
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 304
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8615badb1160230800000000000000
+      internalID: 3604588058077391089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_11
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 304
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adb1b43c02d91eb0800000000000000
+      internalID: -4748533382219973212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_12
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 304
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f61474925eb0640800000000000000
+      internalID: 5047379772850663236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_13
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 203
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d322f19c6f6ee40800000000000000
+      internalID: 5685502923273026831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 203
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f821d6d1b588aa0800000000000000
+      internalID: -6158572308487041141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_15
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 203
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7920fc8aba81d200800000000000000
+      internalID: 203095992041482619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_16
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 203
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40812c1201e3aa150800000000000000
+      internalID: 5884584102119741444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_17
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 204
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9877fedb456d179e0800000000000000
+      internalID: -1625282331051853943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_18
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 205
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0ecdfbb8dcabf70800000000000000
+      internalID: 9203894788588101826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_19
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 204
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693df3a2292768220800000000000000
+      internalID: 2487801816268395414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_20
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 64
+        width: 100
+        height: 141
+      alignment: 9
+      pivot: {x: 0.51114684, y: 0.6422974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f545b282cfc86bd80800000000000000
+      internalID: -8235239853966797729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_21
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 17
+        width: 100
+        height: 188
+      alignment: 9
+      pivot: {x: 0.5, y: 0.73123306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7305a72653b40cf40800000000000000
+      internalID: 5746675817182285879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_22
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 41
+        width: 100
+        height: 165
+      alignment: 9
+      pivot: {x: 0.4777069, y: 0.6891548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175f4e015e64518b0800000000000000
+      internalID: -5182157846574992015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 705
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1afe008bf219b60800000000000000
+      internalID: 7751028901017526743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_23
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 707
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e54fe0af81123f40800000000000000
+      internalID: 5706642986409870825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_24
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 706
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781c82ae3e5db72a0800000000000000
+      internalID: -6738557242566983289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_26
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 706
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f5ff8432989d6c0800000000000000
+      internalID: -4118109599612051554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_27
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 605
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f77fb8e01e119d0800000000000000
+      internalID: -2805213640281063631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_28
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 607
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc6ec3fc1b9a9390800000000000000
+      internalID: -7810760055068922638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_29
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 606
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bea771350ffd5ec0800000000000000
+      internalID: -3576422131292459335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Short tile set_30
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 606
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909eb264cca8b6cf0800000000000000
+      internalID: -257959943688427255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
