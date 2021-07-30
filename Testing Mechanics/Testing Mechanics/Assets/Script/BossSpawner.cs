@@ -31,8 +31,8 @@ public class BossSpawner : MonoBehaviour
             if(!bossHealth.isDead)
             {
                 boss.SetActive(true);
-                MusicCoordinator.instance.BossMusicBGM();
-                Debug.Log("play boss music");
+                //MusicCoordinator.instance.BossMusicBGM();
+                //Debug.Log("play boss music");
                 //bossCollider.enabled = enabled;
             }
         }

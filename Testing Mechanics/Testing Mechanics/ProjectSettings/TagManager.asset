@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Physics Colliders
+    uniqueID: 1359141789
+    locked: 0
   - name: Background
     uniqueID: 4213529639
     locked: 0
