@@ -12,11 +12,15 @@ public class MainMenuTween : MonoBehaviour
     public GameObject exitButton;
     public GameObject title;
 
+    public GameObject settingsWindow;
+
+
     private Vector3 breathe = new Vector3(1.05f, 1.05f, 1.0f);
     private float breatheTime = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
+        settingsWindow.SetActive(false);
         InTheBeginning();
     }
 
@@ -77,5 +81,28 @@ public class MainMenuTween : MonoBehaviour
             .setDelay(animTime);
     }
 
-    
+    public void ActivateSettingWindow()
+    {
+        settingsWindow.SetActive(true);
+        LeanTween.cancel(settingsWindow);
+        settingsWindow.transform.localScale = Vector3.zero;
+        //LeanTween.scale(settingsWindow, new Vector3(2.0f, 0.05f, 1.0f), 0.1f)
+        //    .setEaseInExpo();
+        LeanTween.scale(settingsWindow, Vector3.one, 0.5f)
+            .setEaseInOutBack();
+        //    .setDelay(0.1f);
+    }
+
+    public void CloseSettingWindow()
+    {
+        LeanTween.cancel(settingsWindow);
+        LeanTween.scale(settingsWindow, Vector3.zero, 0.5f)
+            .setEaseInOutBack()
+            .setOnComplete(offSettingWindow);
+    }
+
+    private void offSettingWindow()
+    {
+        settingsWindow.SetActive(false);
+    }
 }
