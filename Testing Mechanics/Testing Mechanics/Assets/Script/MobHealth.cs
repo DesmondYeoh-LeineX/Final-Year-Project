@@ -69,6 +69,7 @@ public class MobHealth : MonoBehaviour
     {
         if(boss.isFacingRight)
         {
+            knockbackDirection = new Vector2 (-knockbackDirection.x, knockbackDirection.y);
             if(knockbackDirection.x > 0)
             {
                 knockbackDirection = new Vector2 (-knockbackDirection.x, knockbackDirection.y);
@@ -77,8 +78,12 @@ public class MobHealth : MonoBehaviour
         else
         {
             knockbackDirection = new Vector2 (knockbackDirection.x, knockbackDirection.y);
+            if(knockbackDirection.x < 0)
+            {
+                knockbackDirection = new Vector2 (-knockbackDirection.x, knockbackDirection.y);
+            }
         }
-        knockbackDirection = new Vector2 (knockbackDirection.x, knockbackDirection.y);
+        // knockbackDirection = new Vector2 (knockbackDirection.x, knockbackDirection.y);
         mobRb.AddForce(knockbackDirection, ForceMode2D.Impulse);
         isBeingKnocked = true;
         yield return new WaitForSeconds(knockbackDuration);

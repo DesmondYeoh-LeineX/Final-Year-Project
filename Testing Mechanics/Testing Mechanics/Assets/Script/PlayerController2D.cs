@@ -423,4 +423,9 @@ public class PlayerController2D : MonoBehaviour
             );
         Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y, wallCheck.position.z));
     }
+
+    public bool GetIsPlayerFacingRight()
+    {
+        return (isFacingRight);
+    }
 }
