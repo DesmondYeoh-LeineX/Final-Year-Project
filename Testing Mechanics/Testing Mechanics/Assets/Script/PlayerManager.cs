@@ -17,6 +17,8 @@ public class PlayerManager : MonoBehaviour
     public float dashIFrameDuration = 0.5f;
     public float damagedIFrameDuration = 0.5f;
 
+    public ParticleSystem healEffect;
+
     private PlayerController2D playerController;
     private Animator playerAnim;
 
@@ -99,5 +101,11 @@ public class PlayerManager : MonoBehaviour
         playerController.enabled = true;
         player.transform.position = originRespawnPoint.position;
         playerAnim.Play("Idle", -1, 0f);
+    }
+
+    public void HealEffect()
+    {
+        healEffect.Play();
+        player.GetComponent<PlayerSoundEffect>().HealSFX();
     }
 }

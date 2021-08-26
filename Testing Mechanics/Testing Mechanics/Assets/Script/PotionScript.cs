@@ -18,7 +18,7 @@ public class PotionScript : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other) 
+    private void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.gameObject.CompareTag("Player"))
         {
@@ -34,6 +34,7 @@ public class PotionScript : MonoBehaviour
                 PlayerManager.instance.playerHealth = health;
                 UIManager.instance.UpdateHealthBar();
             }
+            PlayerManager.instance.HealEffect();
             transform.parent.gameObject.SetActive(false);
         }
     }
