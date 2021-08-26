@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController2D : MonoBehaviour
 {
+    [HeaderAttribute("Player Values")]
     public float movementForce;
     public float airStraffeForce;
     public float maxHorizontalMovementSpeed;
@@ -33,6 +34,9 @@ public class PlayerController2D : MonoBehaviour
 
     public Vector2 wallHopDirection;
     // public Vector2 wallJumpDirection;
+
+    [HeaderAttribute("References")]
+    public ShakeCinemachine shakeScript;
 
 
     private float moveDirection;
@@ -406,12 +410,16 @@ public class PlayerController2D : MonoBehaviour
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
 
-        Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRadius, attackMask);
+        Collider2D[] colInfo = Physics2D.OverlapCircleAll(pos, attackRadius, attackMask);
         if(colInfo != null)
         {
-            MobHealth enemyHealth = colInfo.GetComponent<MobHealth>();
-            enemyHealth.TakeDamage(attackDamage);
-            StartCoroutine(enemyHealth.KnockBack());
+            for(int i = 0; i < colInfo.Length; i++)
+            {
+                MobHealth enemyHealth = colInfo[i].GetComponent<MobHealth>();
+                enemyHealth.TakeDamage(attackDamage);
+                StartCoroutine(enemyHealth.KnockBack());
+                shakeScript.ShakeCamera();          
+            }
         }
     }
 

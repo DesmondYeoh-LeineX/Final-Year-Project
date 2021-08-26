@@ -19,7 +19,7 @@ public class MobHealth : MonoBehaviour
     public ParticleSystem halfhealthParticles;
 
     private Rigidbody2D mobRb;
-    private Boss boss;
+    private Mob mob;
     [SerializeField] private float knockbackStrength;
     [SerializeField] private Vector2 knockbackDirection;
 
@@ -32,7 +32,7 @@ public class MobHealth : MonoBehaviour
         isBeingKnocked = false;
         mobHealth = mobMaxHealth;
         mobRb = GetComponent<Rigidbody2D>();
-        boss = GetComponent<Boss>();
+        mob = GetComponent<Mob>();
     }
 
     // Update is called once per frame
@@ -67,7 +67,7 @@ public class MobHealth : MonoBehaviour
 
     public IEnumerator KnockBack()
     {
-        if(boss.isFacingRight)
+        if(mob.isFacingRight)
         {
             knockbackDirection = new Vector2 (-knockbackDirection.x, knockbackDirection.y);
             if(knockbackDirection.x > 0)
