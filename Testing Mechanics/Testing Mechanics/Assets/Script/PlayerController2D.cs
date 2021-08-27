@@ -269,7 +269,7 @@ public class PlayerController2D : MonoBehaviour
             canFlip = false;
             canJump = false;
             playerAnim.SetTrigger("climbLedge");
-            Debug.Log(canFlip);
+            //Debug.Log(canFlip);
         }
 
         if(canClimbLedge)
@@ -299,7 +299,7 @@ public class PlayerController2D : MonoBehaviour
 
     private void Jump()
     {
-        if(canJump && isGrounded)
+        if(canJump && isGrounded && !canClimbLedge)
         {
             CombatManager.instance.canReceiveInput = false;
             rb.velocity = new Vector2(rb.velocity.x, 0);

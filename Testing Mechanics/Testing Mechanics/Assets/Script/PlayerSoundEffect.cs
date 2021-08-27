@@ -5,23 +5,20 @@ using UnityEngine.Audio;
 
 public class PlayerSoundEffect : MonoBehaviour
 {
+    [HeaderAttribute("Basic")]
     public AudioSource sfxPlayer;
     public AudioClip runSFX;
     public AudioClip jumpSFX;
     public AudioClip wallSlideSFX;
     public AudioClip healSFX;
+    public AudioClip dashSFX;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [HeaderAttribute("Fighting SFX")]
+    public AudioClip punch1SFX;
+    public AudioClip punch2SFX;
+    public AudioClip punch3SFX;
+    public AudioClip damagedSFX;
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void RunningSFX()
     {
@@ -42,4 +39,30 @@ public class PlayerSoundEffect : MonoBehaviour
     {
         sfxPlayer.PlayOneShot(healSFX);
     }
+
+    public void DashSFX()
+    {
+        sfxPlayer.PlayOneShot(dashSFX);
+    }
+
+    public void Punch1SFX()
+    {
+        sfxPlayer.PlayOneShot(punch1SFX);
+    }
+
+    public void Punch2SFX()
+    {
+        sfxPlayer.PlayOneShot(punch2SFX);
+    }
+
+    public void Punch3SFX()
+    {
+        sfxPlayer.PlayOneShot(punch3SFX);
+    }
+
+    public void DamagedSFX()
+    {
+        sfxPlayer.PlayOneShot(damagedSFX);
+    }
+
 }
