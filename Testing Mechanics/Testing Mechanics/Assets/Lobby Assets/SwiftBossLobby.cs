@@ -9,6 +9,6 @@ public class SwiftBossLobby : MonoBehaviour
 {
     public void GoToSwiftLevel()
     {
-        SceneManager.LoadScene("AlphaLevel");
+        SceneManager.LoadScene("BetaLevel");
     }
 }
