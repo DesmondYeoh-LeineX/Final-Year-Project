@@ -26,7 +26,11 @@ public class MobBehaviour : StateMachineBehaviour
        {
          Vector2 target = new Vector2 (player.position.x, rb.position.y);
          mobTransform.position = Vector2.MoveTowards(rb.position, target, mob.speed * Time.fixedDeltaTime);
-       } 
+       }
+       else
+       {
+          animator.SetTrigger("Idle");
+       }
        //rb.MovePosition(newPos);
 
        mob.CheckPlayerDistanceForAttack();

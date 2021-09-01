@@ -1,7 +1,76 @@
 fileFormatVersion: 2
 guid: c72033d84deebfd448277bbc0c7d542e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6596099509807235790
+    second: mob die 3_0
+  - first:
+      213: -3282213072714219388
+    second: mob die 3_1
+  - first:
+      213: -7429168672924250296
+    second: mob die 3_2
+  - first:
+      213: -6769711320104224154
+    second: mob die 3_3
+  - first:
+      213: -2790040992302534663
+    second: mob die 3_4
+  - first:
+      213: -8708709176110391438
+    second: mob die 3_5
+  - first:
+      213: 2991824272567249881
+    second: mob die 3_6
+  - first:
+      213: 3654299872864298029
+    second: mob die 3_7
+  - first:
+      213: 2618655532179949725
+    second: mob die 3_8
+  - first:
+      213: -2049807707365664282
+    second: mob die 3_9
+  - first:
+      213: 8287836045830747060
+    second: mob die 3_10
+  - first:
+      213: -5233262675890105759
+    second: mob die 3_11
+  - first:
+      213: -1415300279565849745
+    second: mob die 3_12
+  - first:
+      213: 921055276380087839
+    second: mob die 3_13
+  - first:
+      213: -3882592638873542594
+    second: mob die 3_14
+  - first:
+      213: -3710110278435182474
+    second: mob die 3_15
+  - first:
+      213: 6382892693779022883
+    second: mob die 3_16
+  - first:
+      213: -3468966562062466858
+    second: mob die 3_17
+  - first:
+      213: 4752203427893485689
+    second: mob die 3_18
+  - first:
+      213: -6380981890934009518
+    second: mob die 3_19
+  - first:
+      213: 8191210204627149215
+    second: mob die 3_20
+  - first:
+      213: -4070130336278585907
+    second: mob die 3_21
+  - first:
+      213: 5822302732688181863
+    second: mob die 3_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +109,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +140,54 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: mob die 3_0
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 280
+        width: 348
+        height: 417
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec240397e8d0a8b50800000000000000
+      internalID: 6596099509807235790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

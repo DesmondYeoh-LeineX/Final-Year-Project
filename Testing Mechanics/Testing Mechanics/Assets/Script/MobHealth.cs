@@ -20,6 +20,7 @@ public class MobHealth : MonoBehaviour
 
     private Rigidbody2D mobRb;
     private Mob mob;
+    Animator anim;
     [SerializeField] private float knockbackStrength;
     [SerializeField] private Vector2 knockbackDirection;
 
@@ -33,6 +34,7 @@ public class MobHealth : MonoBehaviour
         mobHealth = mobMaxHealth;
         mobRb = GetComponent<Rigidbody2D>();
         mob = GetComponent<Mob>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,8 +53,14 @@ public class MobHealth : MonoBehaviour
 
         if(mobHealth <= 0 && !isDead)
         {
-            Death();
+            DoDeathAnim();
         }
+    }
+
+    private void DoDeathAnim()
+    {
+        isDead = true;
+        anim.SetBool("isDead", isDead);
     }
 
     private void Death()
@@ -60,13 +68,13 @@ public class MobHealth : MonoBehaviour
         //play death animation
         deathParticles.transform.position = transform.position;
         deathParticles.Play();
-        isDead = true;
         //after animation finish
         this.gameObject.SetActive(false);
     }
 
     public IEnumerator KnockBack()
     {
+        anim.SetTrigger("Hurt");
         if(mob.isFacingRight)
         {
             knockbackDirection = new Vector2 (-knockbackDirection.x, knockbackDirection.y);
