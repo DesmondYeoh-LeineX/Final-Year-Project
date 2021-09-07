@@ -69,6 +69,7 @@ public class MobHealth : MonoBehaviour
         deathParticles.transform.position = transform.position;
         deathParticles.Play();
         //after animation finish
+        UIManager.instance.UpdateCounter();
         this.gameObject.SetActive(false);
     }
 

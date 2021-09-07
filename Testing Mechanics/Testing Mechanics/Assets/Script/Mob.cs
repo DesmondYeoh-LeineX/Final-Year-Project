@@ -79,7 +79,7 @@ public class Mob : MonoBehaviour
         if(colInfo != null)
         {
             PlayerManager.instance.TakeDamage(touchDamage);
-            Debug.Log("Touched");
+            //Debug.Log("Touched");
         }
     }
 

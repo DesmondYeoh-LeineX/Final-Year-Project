@@ -17,6 +17,8 @@ public class PlayerManager : MonoBehaviour
     public float dashIFrameDuration = 0.5f;
     public float damagedIFrameDuration = 0.5f;
 
+    public Transform checkPoint;
+
     public ParticleSystem healEffect;
 
     private PlayerController2D playerController;
@@ -65,7 +67,7 @@ public class PlayerManager : MonoBehaviour
         {
             Death();
         }
-        Debug.Log(playerHealth);
+        //Debug.Log(playerHealth);
     }
 
     public IEnumerator DamagedIFrame()
@@ -101,6 +103,11 @@ public class PlayerManager : MonoBehaviour
         playerController.enabled = true;
         player.transform.position = originRespawnPoint.position;
         playerAnim.Play("Idle", -1, 0f);
+    }
+
+    public void SpawnAtCheckpoint()
+    {
+        player.transform.position = checkPoint.position;
     }
 
     public void HealEffect()
