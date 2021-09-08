@@ -20,6 +20,8 @@ public class UIManager : MonoBehaviour
     public float fadeRate;
     public AudioSource gameOverAudio;
 
+    public GameObject settingsWindow;
+
     [HeaderAttribute("Don't Simply Touch")]
     public int maxMobCount;
 
@@ -45,6 +47,7 @@ public class UIManager : MonoBehaviour
         showDead = false;
         alphaLevel = 0.0f;
         gameOverPanel.color = new Color(255, 255, 255, alphaLevel);
+        settingsWindow.SetActive(false);
     }
 
     // Update is called once per frame
@@ -53,6 +56,12 @@ public class UIManager : MonoBehaviour
         if(showDead)
         {
             ShowDeadPanel();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape) && !settingsWindow.activeSelf)
+        {
+            Time.timeScale = 0;
+            ActivateSettingWindow();
         }
     }
 
@@ -103,6 +112,34 @@ public class UIManager : MonoBehaviour
             alphaLevel += fadeRate * Time.deltaTime;
             gameOverPanel.color = new Color(255, 255, 255, alphaLevel);
         }
+    }
+
+    public void ActivateSettingWindow()
+    {
+        settingsWindow.SetActive(true);
+        LeanTween.cancel(settingsWindow);
+        settingsWindow.transform.localScale = Vector3.zero;
+        //LeanTween.scale(settingsWindow, new Vector3(2.0f, 0.05f, 1.0f), 0.1f)
+        //    .setEaseInExpo();
+        LeanTween.scale(settingsWindow, Vector3.one, 0.5f)
+            .setEaseInOutBack()
+            .setIgnoreTimeScale(true);
+        //    .setDelay(0.1f);
+    }
+
+    public void CloseSettingWindow()
+    {
+        LeanTween.cancel(settingsWindow);
+        LeanTween.scale(settingsWindow, Vector3.zero, 0.5f)
+            .setEaseInOutBack()
+            .setIgnoreTimeScale(true)
+            .setOnComplete(offSettingWindow);
+    }
+
+    private void offSettingWindow()
+    {
+        settingsWindow.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
 }
