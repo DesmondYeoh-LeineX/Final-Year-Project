@@ -413,7 +413,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b0b8a2983a1a81744868bf297b003594, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41fce1a2b1b6be04b85ca351b8cdf48c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -468,8 +468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370.6, y: 340.3}
-  m_SizeDelta: {x: 667.39606, y: 386.18506}
+  m_AnchoredPosition: {x: -383.63, y: 335.64}
+  m_SizeDelta: {x: 693.4085, y: 394.14832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1550740122
 MonoBehaviour:
@@ -544,7 +544,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2336039528399532061, guid: c10a2fc30e1ab9a4b8058659ebb1b515,
+  m_Sprite: {fileID: 5706176105431153944, guid: 2930c4338e63d16459ac18168ce47a27,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -708,8 +708,8 @@ Canvas:
   m_GameObject: {fileID: 1903613864}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 446045822}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
