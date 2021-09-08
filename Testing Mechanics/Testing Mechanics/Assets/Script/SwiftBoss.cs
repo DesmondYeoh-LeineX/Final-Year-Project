@@ -86,7 +86,7 @@ public class SwiftBoss : MonoBehaviour
         int tempIndex;
         do
         {
-            tempIndex = Random.Range(0, 3);
+            tempIndex = Random.Range(0, teleportPoints.Length);
         }
         while (tempIndex == currentLocation);
         currentLocation = tempIndex;
@@ -150,7 +150,7 @@ public class SwiftBoss : MonoBehaviour
         {
             if(spikeLocations[i] != null)
             {
-                Debug.Log(i);
+                //Debug.Log(i);
                 spikeLocations[i].gameObject.SetActive(true);
                 SpikeLogic script = spikeLocations[i].GetComponentInChildren<SpikeLogic>();
                 script.StartAttack();

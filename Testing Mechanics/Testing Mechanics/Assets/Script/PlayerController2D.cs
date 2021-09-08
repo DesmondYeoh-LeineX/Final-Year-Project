@@ -436,4 +436,9 @@ public class PlayerController2D : MonoBehaviour
     {
         return (isFacingRight);
     }
+
+    public bool GetIsDashing()
+    {
+        return (isDashing);
+    }
 }

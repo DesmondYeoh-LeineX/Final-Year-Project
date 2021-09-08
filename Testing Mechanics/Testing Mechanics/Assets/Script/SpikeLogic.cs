@@ -7,12 +7,12 @@ public class SpikeLogic : MonoBehaviour
     public GameObject WarningLight;
     public int spikeDamage;
 
-    private PolygonCollider2D colInfo;
+    private BoxCollider2D colInfo;
     private Animator spikeAnim;
     // Start is called before the first frame update
     void Start()
     {
-        colInfo = this.gameObject.GetComponent<PolygonCollider2D>();
+        colInfo = this.gameObject.GetComponent<BoxCollider2D>();
         spikeAnim = this.gameObject.GetComponent<Animator>();
         transform.parent.gameObject.SetActive(false);
     }

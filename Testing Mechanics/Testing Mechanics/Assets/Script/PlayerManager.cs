@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -51,7 +52,7 @@ public class PlayerManager : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if(!playerInvulnerable && playerHealth > 0 && !playerController.canClimbLedge)
+        if(!playerInvulnerable && playerHealth > 0 && !playerController.canClimbLedge && !playerController.GetIsDashing())
         {
             playerHealth -= damage;
             UIManager.instance.UpdateHealthBar();
@@ -91,18 +92,21 @@ public class PlayerManager : MonoBehaviour
         isDead = true;
         playerAnim.SetTrigger("Death");
         playerController.enabled = false;
+        UIManager.instance.initiateDeadPanel();
         StartCoroutine(Respawn());
     }
 
     public IEnumerator Respawn()
     {
-        yield return new WaitForSeconds(3.0f);
-        isDead = false;
-        playerHealth = playerMaxHealth;
-        UIManager.instance.UpdateHealthBar();
-        playerController.enabled = true;
-        player.transform.position = originRespawnPoint.position;
-        playerAnim.Play("Idle", -1, 0f);
+        yield return new WaitForSeconds(10.0f);
+        // show buttons to restart scene or exit to main menu
+        SceneManager.LoadScene("BetaLevel");
+        // isDead = false;
+        // playerHealth = playerMaxHealth;
+        // UIManager.instance.UpdateHealthBar();
+        // playerController.enabled = true;
+        // player.transform.position = originRespawnPoint.position;
+        // playerAnim.Play("Idle", -1, 0f);
     }
 
     public void SpawnAtCheckpoint()
