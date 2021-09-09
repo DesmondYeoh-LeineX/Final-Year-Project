@@ -21,9 +21,15 @@ public class PlayerManager : MonoBehaviour
     public Transform checkPoint;
 
     public ParticleSystem healEffect;
+    public GameObject maskPrompt;
 
     private PlayerController2D playerController;
     private Animator playerAnim;
+    private bool firstHeal;
+
+    [HeaderAttribute("Mask Counter")]
+    public int maxMasks = 73;
+    public int currentMasks;
 
     private void Awake() 
     {
@@ -42,12 +48,14 @@ public class PlayerManager : MonoBehaviour
     {
         playerAnim = player.GetComponent<Animator>();
         playerController = player.GetComponent<PlayerController2D>();
+        firstHeal = false;
+        currentMasks = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void TakeDamage(int damage)
@@ -116,7 +124,19 @@ public class PlayerManager : MonoBehaviour
 
     public void HealEffect()
     {
+        currentMasks++;
+        if(!firstHeal)
+        {
+            firstHeal = true;
+            MaskPrompt();
+        }
         healEffect.Play();
         player.GetComponent<PlayerSoundEffect>().HealSFX();
+    }
+
+    private void MaskPrompt()
+    {
+        maskPrompt.SetActive(true);
+        maskPrompt.transform.position = player.transform.position + new Vector3(0.0f, 2.0f, 0.0f);
     }
 }

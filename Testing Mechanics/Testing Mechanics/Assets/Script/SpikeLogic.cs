@@ -6,6 +6,7 @@ public class SpikeLogic : MonoBehaviour
 {
     public GameObject WarningLight;
     public int spikeDamage;
+    public int ragedSpikeDamage; 
 
     private BoxCollider2D colInfo;
     private Animator spikeAnim;
@@ -27,7 +28,14 @@ public class SpikeLogic : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            PlayerManager.instance.TakeDamage(spikeDamage);
+            if(PlayerManager.instance.currentMasks >= PlayerManager.instance.maxMasks)
+            {
+                PlayerManager.instance.TakeDamage(spikeDamage);
+            }
+            else
+            {
+                PlayerManager.instance.TakeDamage(ragedSpikeDamage);
+            }
         }
     }
 

@@ -5,11 +5,12 @@ using UnityEngine;
 public class PotionScript : MonoBehaviour
 {
     public int healAmt = 20;
-
+    private bool healed;
     // Start is called before the first frame update
     void Start()
     {
-
+        // to prevent double call
+        healed = false;
     }
 
     // Update is called once per frame
@@ -22,20 +23,24 @@ public class PotionScript : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            int health = PlayerManager.instance.playerHealth;
-            int maxHealth = PlayerManager.instance.playerMaxHealth;
-            if(health < maxHealth)
+            if(!healed)
             {
-                health += healAmt;
-                if (health > maxHealth)
+                healed = true;
+                int health = PlayerManager.instance.playerHealth;
+                int maxHealth = PlayerManager.instance.playerMaxHealth;
+                if(health < maxHealth)
                 {
-                    health = maxHealth;
+                    health += healAmt;
+                    if (health > maxHealth)
+                    {
+                        health = maxHealth;
+                    }
+                    PlayerManager.instance.playerHealth = health;
+                    UIManager.instance.UpdateHealthBar();
                 }
-                PlayerManager.instance.playerHealth = health;
-                UIManager.instance.UpdateHealthBar();
+                PlayerManager.instance.HealEffect();
+                transform.parent.gameObject.SetActive(false);
             }
-            PlayerManager.instance.HealEffect();
-            transform.parent.gameObject.SetActive(false);
         }
     }
 

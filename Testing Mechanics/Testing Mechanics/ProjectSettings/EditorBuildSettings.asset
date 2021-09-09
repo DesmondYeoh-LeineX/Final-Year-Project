@@ -11,10 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: 85dc1787eca57bb44b008e5abf936d2e
-  - enabled: 0
-    path: Assets/Scenes/AlphaLevel.unity
-    guid: 7fa21aef26e46be4c98011bda9d74f8b
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: 061062d6f2b154849a2adc4f18e61d0c
   - enabled: 1
     path: Assets/Scenes/BetaLevel.unity
     guid: 67f8fb10be55a3c4f93ea5a9065e4426
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 1eada8aaee5f5964890f40420ec6f2b9
   m_configObjects: {}

@@ -19,8 +19,8 @@ public class SwiftSpawner : MonoBehaviour
             if(!bossScript.spawned)
             {
                 swiftBoss.SetActive(true);
-                //MusicCoordinator.instance.BossMusicBGM();
-                Debug.Log("play boss music");
+                MusicCoordinator.instance.BossMusicBGM();
+                //Debug.Log("play boss music");
                 StartCoroutine(bossScript.StartBoss());
             }
         }

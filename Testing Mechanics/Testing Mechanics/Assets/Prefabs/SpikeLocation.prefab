@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WarningLight: {fileID: 7866964789715542815}
   spikeDamage: 50
+  ragedSpikeDamage: 80
 --- !u!212 &7866964790389708288
 SpriteRenderer:
   m_ObjectHideFlags: 0

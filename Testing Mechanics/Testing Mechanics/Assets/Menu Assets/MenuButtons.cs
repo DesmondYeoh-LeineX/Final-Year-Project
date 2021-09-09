@@ -7,6 +7,11 @@ public class MenuButtons : MonoBehaviour
 {
     public MainMenuTween tweenScript;
 
+    private void Start() 
+    {
+        MusicCoordinator.instance.BasicMusicBGM();
+    }
+
     public void PlayButton()
     {
         SceneManager.LoadScene("Lobby");

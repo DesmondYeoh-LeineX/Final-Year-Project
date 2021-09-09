@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -21,11 +22,13 @@ public class UIManager : MonoBehaviour
     public AudioSource gameOverAudio;
 
     public GameObject settingsWindow;
+    public Image finishPanel;
 
     [HeaderAttribute("Don't Simply Touch")]
     public int maxMobCount;
 
     private bool showDead;
+    private bool finishedGame;
     private float alphaLevel;
     private float maxAlpha = 1.0f;
 
@@ -45,6 +48,7 @@ public class UIManager : MonoBehaviour
     {
         killPrompt.SetActive(false);
         showDead = false;
+        finishedGame = false;
         alphaLevel = 0.0f;
         gameOverPanel.color = new Color(255, 255, 255, alphaLevel);
         settingsWindow.SetActive(false);
@@ -58,11 +62,23 @@ public class UIManager : MonoBehaviour
             ShowDeadPanel();
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape) && !settingsWindow.activeSelf)
+        if(finishedGame)
         {
-            Time.timeScale = 0;
-            ActivateSettingWindow();
+            ShowFinishPanel();
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(!settingsWindow.activeSelf)
+            {
+                ActivateSettingWindow();
+            }
+            else
+            {
+                CloseSettingWindow();
+            }
+        }
+
     }
 
     public void UpdateHealthBar()
@@ -73,8 +89,11 @@ public class UIManager : MonoBehaviour
 
     public void UpdateCounter()
     {
-        count++;
-        counterText.text = count.ToString();
+        if(count < maxMobCount)
+        {
+            count++;
+            counterText.text = count.ToString();
+        }
     }
 
     public bool CompareCounters()
@@ -100,17 +119,35 @@ public class UIManager : MonoBehaviour
     {
         showDead = true;
         gameOverAudio.Play();
-        // play game over audio
     }
 
     private void ShowDeadPanel()
     {
-        float speed = fadeRate * Time.deltaTime;
-
         if(alphaLevel < maxAlpha)
         {
             alphaLevel += fadeRate * Time.deltaTime;
             gameOverPanel.color = new Color(255, 255, 255, alphaLevel);
+        }
+    }
+
+    public void FinishGame()
+    {
+        finishedGame = true;
+        StartCoroutine("FinishTimer");
+    }
+
+    private IEnumerator FinishTimer()
+    {
+        yield return new WaitForSeconds(5.0f);
+        SceneManager.LoadScene("Credits");
+    }
+
+    private void ShowFinishPanel()
+    {
+        if(alphaLevel < maxAlpha)
+        {
+            alphaLevel += fadeRate * Time.deltaTime;
+            finishPanel.color = new Color(255, 255, 255, alphaLevel);
         }
     }
 
@@ -139,7 +176,6 @@ public class UIManager : MonoBehaviour
     private void offSettingWindow()
     {
         settingsWindow.SetActive(false);
-        Time.timeScale = 1.0f;
     }
 
 }

@@ -9,6 +9,7 @@ public class SwiftBoss : MonoBehaviour
     public bool teleported;
     public bool attacked;
     public bool spawned;
+    public Color rageColour;
     
     public Transform[] teleportPoints = new Transform[3];
 
@@ -136,6 +137,10 @@ public class SwiftBoss : MonoBehaviour
 
     public IEnumerator StartBoss()
     {
+        if(PlayerManager.instance.currentMasks < PlayerManager.instance.maxMasks)
+        {
+            ChangeToRageMode();
+        }
         spawned = true;
         bossAnim.enabled = enabled;
         yield return new WaitForSeconds(1.0f);
@@ -163,6 +168,17 @@ public class SwiftBoss : MonoBehaviour
     public void StopSpriteRenderer()
     {
         rend.enabled = !enabled;
+    }
+
+    private void ChangeToRageMode()
+    {
+        rend.material.color = rageColour;
+        transform.localScale = new Vector3(1.75f, 1.75f, 1f);
+    }
+
+    public void EndLevel()
+    {
+        UIManager.instance.FinishGame();
     }
     
 }
